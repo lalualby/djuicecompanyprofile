@@ -13,6 +13,8 @@ Dokumen ini mencatat rencana pengembangan lanjutan, temuan kendala/bug, serta ri
 - *(Belum ada bug fungsional lain yang dilaporkan pada hasil build saat ini.)*
 
 ## Riwayat Perubahan
+- **2026-11-11 — Hardening Login Production:**
+  - Menghapus banner **Akun Admin Bawaan** dan fungsi tombol **Isi Otomatis** di `/login` (`src/app/login/page.tsx`) agar kredensial admin tidak tampil publik saat mode production.
 - **2026-11-11 — Perbaikan Bug WhatsApp Pesanan (Google Sheets Numeric Cell):**
   - Memperbaiki error `TypeError: raw.replace is not a function` di `/admin/orders` yang terjadi ketika Google Spreadsheet menyimpan nomor WhatsApp sebagai angka (`number`) dan menghapus angka `0` di depan.
   - Menambahkan `src/lib/whatsapp.ts` (`normalizeWhatsApp`, `formatWhatsAppDisplay`, `normalizeOrderRecord`) dan menerapkannya di `/api/orders`, `/api/admin/orders`, `/admin/orders`, `/orders`, dan `/orders/[id]`, serta format kolom teks `@` untuk `whatsapp` di `setup.gs`.

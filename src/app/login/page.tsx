@@ -50,11 +50,6 @@ function LoginForm() {
     }
   };
 
-  const fillDefaultAdmin = () => {
-    setEmail("admin@gmail.com");
-    setPassword("123456");
-  };
-
   return (
     <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-8 border border-surface-container relative z-10">
       {/* Header Logo & Title */}
@@ -73,27 +68,6 @@ function LoginForm() {
         </h1>
         <p className="text-xs sm:text-sm text-on-surface-variant mt-1">
           Portal akses dashboard admin & pelanggan {siteConfig.name}
-        </p>
-      </div>
-
-      {/* Demo Default Credentials Banner */}
-      <div className="mb-5 p-3.5 rounded-2xl bg-amber-subtle/60 border border-primary-container/30 flex flex-col gap-1.5 text-xs text-on-surface">
-        <div className="flex items-center justify-between">
-          <span className="font-bold text-primary flex items-center gap-1">
-            <span className="material-symbols-outlined text-[16px]">info</span>
-            Akun Admin Bawaan
-          </span>
-          <button
-            type="button"
-            onClick={fillDefaultAdmin}
-            className="text-[11px] font-bold text-primary-container hover:underline"
-          >
-            Isi Otomatis
-          </button>
-        </div>
-        <p className="text-[11px] text-on-surface-variant leading-relaxed">
-          Email: <code className="font-mono font-bold">admin@gmail.com</code> | Sandi:{" "}
-          <code className="font-mono font-bold">123456</code>
         </p>
       </div>
 
