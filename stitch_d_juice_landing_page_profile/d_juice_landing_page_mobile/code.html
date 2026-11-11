@@ -1,0 +1,598 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed-dim": "#bbcd9c", "on-secondary-container": "#58683f", "on-background": "#141e18", "inverse-primary": "#ffb77b", "inverse-on-surface": "#e8f4ea", "error": "#ba1a1a", "surface-container-highest": "#dae5dc", "tertiary-fixed-dim": "#b9ccb3", "on-secondary": "#ffffff", "on-error": "#ffffff", "on-surface": "#141e18", "background": "#f1fcf3", "on-error-container": "#93000a", "primary-fixed": "#ffdcc2", "secondary-container": "#d4e6b4", "surface-container-lowest": "#ffffff", "surface-variant": "#dae5dc", "on-surface-variant": "#52443a", "surface-container": "#e5f1e7", "error-container": "#ffdad6", "primary": "#89511a", "primary-container": "#db9558", "outline-variant": "#d7c3b5", "surface-pure": "#FFFFFF", "on-primary-fixed": "#2e1500", "secondary": "#54643c", "tertiary-container": "#97aa93", "amber-subtle": "#F6E4D3", "surface": "#f1fcf3", "on-tertiary-fixed": "#101f0f", "surface-bright": "#f1fcf3", "surface-container-low": "#ebf7ed", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#6d3a02", "on-primary-container": "#5b2f00", "botanical-muted": "#E5ECE0", "on-secondary-fixed-variant": "#3d4c26", "on-secondary-fixed": "#131f01", "on-tertiary-fixed-variant": "#3a4b38", "surface-dim": "#d1ddd4", "secondary-fixed": "#d7e9b7", "on-primary": "#ffffff", "primary-fixed-dim": "#ffb77b", "inverse-surface": "#29332c", "surface-tint": "#89511a", "surface-cream": "#FCF9EA", "on-tertiary-container": "#2e3f2d", "surface-container-high": "#e0ebe2", "outline": "#857468", "tertiary": "#52634f" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter-lg": "2rem", "gutter": "1.5rem", "margin-lg": "4rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-sm": "1rem", "margin-md": "2rem", "margin": "1.25rem", "gutter-sm": "1rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-lg": ["15px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700"}], "label-md": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="D'juice Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm90R1OefMYNE7UHtOJZoYod5r0aXRIidb2ZEi73jmsI2t06UOXnFKuAf9ivVKpNlyxDVjvKFYo5cnHC5BpriwzG9KEu2z0uW0ZEgDFAU5bL7KWAAeoHPknZDsoJ8kTroq4UYYTcMb97T2aR4WEb85Ytss9TeER4xIzLq6JOjU-lER7Ax-XtBoxc3vXy52Bmcs5zH3qmONsiOehu06OMEVFZf8Sm38k-N-TnBZS5A"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">D'juice</span><span class="font-label-sm text-label-sm text-secondary leading-none mt-0.5">Beranda</span></div></div><div class="flex items-center gap-space-xs"><a class="min-h-[44px] px-space-md py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center transition-opacity hover:opacity-90 active:scale-95" data-path="login" href="#">Masuk</a><button aria-label="Menu Navigasi" class="min-w-[44px] min-h-[44px] w-11 h-11 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-36"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="w-full px-margin pt-space-md pb-space-xl flex flex-col gap-space-lg">
+<!-- Vitality Pill Tag -->
+<div class="self-start inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[18px] text-secondary">eco</span>
+<span class="font-label-sm text-label-sm tracking-wide">100% Buah &amp; Sayuran Organik Segar</span>
+</div>
+<!-- Hero Content -->
+<div class="flex flex-col gap-space-sm">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight tracking-tight">
+        Segarkan Harimu dengan <span class="text-primary-container">Kebaikan Murni Alami</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Jus cold-pressed murni tanpa tambahan air, pemanis buatan, atau bahan pengawet. Nutrisi maksimal diekstraksi perlahan untuk energi prima sepanjang hari.
+      </p>
+</div>
+<!-- CTA Group -->
+<div class="flex flex-col gap-space-xs sm:flex-row">
+<a class="min-h-[48px] px-7 py-3 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 text-center" href="#layanan">
+<span class="">Pesan Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="min-h-[48px] px-6 py-3 rounded-full bg-botanical-muted text-on-surface font-label-lg text-label-lg flex items-center justify-center transition-all active:scale-95 text-center" href="#menu-varian">
+        Lihat Menu Varian
+      </a>
+</div>
+<!-- Hero Image Card with Floating Badge -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md mt-space-xs">
+<img alt="Botol Cold-Pressed Juice D'juice" class="w-full aspect-[4/3] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9El4FuEmUeMaPZWHkC_OJER8UZSiTXEEQfwizvKML6sBdUcnc2Ov4HohdoyHa4T_86jAaFdEiBA6_dIWFCE4CngQAqYecB7U865txBP71oJ82JoL_9ZDyqOpLPMct4KtTZF7MMXu-LIh5Kok1eX99tScD1fgX7raIj5C6bHRV0vY6Yax1sWP2PE0eiABennm2viBcUJKmThBP5uy1jysdzVWvFoIoSLeXxTXwTqE">
+<!-- Gradient Scrim for subtle contrast overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 via-transparent to-transparent pointer-events-none"></div>
+<!-- Floating Delight Badge -->
+<div class="absolute bottom-4 left-4 right-4 sm:right-auto bg-surface-cream/95 backdrop-blur-md px-4 py-2.5 rounded-full flex items-center gap-3 shadow-md">
+<div class="flex items-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg font-bold ml-1 text-on-surface">4.9/5</span>
+</div>
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="font-label-sm text-label-sm text-secondary truncate">Rating Kepuasan Pelanggan</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: TENTANG KAMI -->
+<section class="w-full bg-surface-cream px-margin py-space-xl flex flex-col gap-space-lg" id="tentang">
+<!-- Header Block -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">Tentang D'juice</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+        Komitmen Kami untuk Gaya Hidup Lebih Sehat
+      </h2>
+</div>
+<!-- Narrative Story -->
+<div class="flex flex-col gap-space-sm">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Berawal dari dapur sederhana pada tahun 2021, D'juice hadir dengan misi mengembalikan nutrisi sejati buah dan sayur ke kehidupan perkotaan yang sibuk melalui teknologi slow cold-press hidrolik terbaik.
+      </p>
+</div>
+<!-- Farm Fresh Photo -->
+<div class="w-full rounded-2xl overflow-hidden shadow-sm">
+<img alt="Bahan Baku Buah dan Sayuran Segar D'juice" class="w-full aspect-[16/10] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSwA3xBvcWgXw9XfK9mHL4gjoL1Lb9gCFPxEsdNj8cE9e3WfYvboAYGeH31y9NcXyvM1Nd-5Iy1tkykrV941c2r3VGlcdBuUlXyOKUXs3Z9cQvQRehaTxdIW5XXlROIzCM0lZ8m7oRPn1J3KsqRQwfYaUfs0BQP-hJhlH8apLCk3bxmFqJoz3R7dA4IX8gMkbwd2SOe3ddUDAJjeiTfdY4VYCiVfNQs8bwVMCxFCQ">
+</div>
+<!-- 3 Key Pillars -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Pillar 1 -->
+<div class="p-space-md rounded-2xl bg-surface-pure shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">slow_motion_video</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Teknologi Slow Cold-Press</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Ekstraksi dingin hidrolik tanpa panas menjaga 98% enzim aktif dan vitamin esensial tetap utuh hingga tegukan terakhir.
+        </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-md rounded-2xl bg-surface-pure shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">agriculture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Bahan Baku Lokal Organik</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Dipanen langsung dari petani organik nusantara terpercaya setiap pagi demi menjamin kesegaran dan kemurnian rasa.
+        </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-md rounded-2xl bg-surface-pure shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-amber-subtle text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Tanpa Bahan Tambahan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Murni 100%. 0% air tambahan, 0% gula rafinasi, dan tanpa pengawet sintetis maupun pewarna buatan sama sekali.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 3: LAYANAN & PRODUK -->
+<section class="w-full px-margin py-space-xl flex flex-col gap-space-lg bg-surface" id="menu-varian">
+<div class="flex flex-col gap-1.5">
+<div class="self-start inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[16px]">local_florist</span>
+<span class="font-label-sm text-label-sm tracking-wide">Freshly Cold-Pressed Daily</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+Varian Jus Favorit &amp; Harga
+</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+Racikan botani murni kaya nutrisi mikro tanpa sentuhan gula maupun pengawet. Tersedia dalam ukuran botol 350ml.
+</p>
+</div>
+
+<div class="flex flex-col gap-space-md">
+<!-- Product 1: Green Revive -->
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs border border-surface-container">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-botanical-muted text-secondary font-label-sm text-label-sm font-bold mb-1">
+<span class="">Detox &amp; Alkalizing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Green Revive</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Kale, Apel Hijau, Mentimun, Seledri &amp; Lemon</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-pure text-secondary font-bold shrink-0">350 ml</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+Membantu membersihkan racun hati, mengembalikan hidrasi alami sel, dan menjaga elastisitas kulit.
+</p>
+<div class="flex items-center justify-between pt-space-xs mt-1 border-t border-surface-container/60">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Harga Satuan</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Rp 38.000</span>
+</div>
+<button onclick="addBottleToOrder('Green Revive', 38000)" class="min-h-[44px] px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md inline-flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">+ Pesan</span>
+</button>
+</div>
+</div>
+
+<!-- Product 2: Golden Glow -->
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs border border-surface-container">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-subtle text-primary font-label-sm text-label-sm font-bold mb-1">
+<span class="">Immunity &amp; Glow</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Golden Glow</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Wortel Organik, Jeruk Valencia, Kunyit &amp; Jahe</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-pure text-secondary font-bold shrink-0">350 ml</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+Kaya beta-karoten dan kurkumin aktif untuk meningkatkan stamina, daya tahan tubuh, dan kecerahan kulit.
+</p>
+<div class="flex items-center justify-between pt-space-xs mt-1 border-t border-surface-container/60">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Harga Satuan</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Rp 40.000</span>
+</div>
+<button onclick="addBottleToOrder('Golden Glow', 40000)" class="min-h-[44px] px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md inline-flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">+ Pesan</span>
+</button>
+</div>
+</div>
+
+<!-- Product 3: Berry Blast -->
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs border border-surface-container">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold mb-1">
+<span class="">High Antioxidant</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Berry Blast</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Stroberi, Blackberry, Bit Merah &amp; Air Kelapa</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-pure text-secondary font-bold shrink-0">350 ml</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+Perlindungan tinggi radikal bebas, mempercepat pemulihan energi setelah beraktivitas atau olahraga intens.
+</p>
+<div class="flex items-center justify-between pt-space-xs mt-1 border-t border-surface-container/60">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Harga Satuan</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Rp 45.000</span>
+</div>
+<button onclick="addBottleToOrder('Berry Blast', 45000)" class="min-h-[44px] px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md inline-flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">+ Pesan</span>
+</button>
+</div>
+</div>
+
+<!-- Product 4: Almond Cream Nut -->
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-xs border border-surface-container">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold mb-1">
+<span class="">Plant-Protein &amp; Fiber</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Almond Cream Nut</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Raw Almond, Medjool Dates, Himalayan Salt &amp; Vanila</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-pure text-secondary font-bold shrink-0">350 ml</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+Susu almond vegan lembut dengan rasa manis alami kurma, tinggi lemak baik tanpa kolesterol.
+</p>
+<div class="flex items-center justify-between pt-space-xs mt-1 border-t border-surface-container/60">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Harga Satuan</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Rp 48.000</span>
+</div>
+<button onclick="addBottleToOrder('Almond Cream Nut', 48000)" class="min-h-[44px] px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md inline-flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">+ Pesan</span>
+</button>
+</div>
+</div>
+</div>
+</section><section class="w-full px-margin py-space-xl flex flex-col gap-space-lg" id="layanan">
+<!-- Header Block -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">Layanan Kami</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+        Solusi Nutrisi Harian Sesuai Kebutuhan Anda
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Dirancang seksama untuk mendampingi ritme keseharian Anda dengan asupan gizi seimbang.
+      </p>
+</div>
+<!-- 4 Cards Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-space-xs relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between">
+<div class="w-11 h-11 rounded-xl bg-botanical-muted text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">spa</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-amber-subtle text-primary">Paling Populer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Paket Detox &amp; Cleanse (3-7 Hari)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Program pembersihan racun tubuh bertahap yang diformulasikan oleh ahli nutrisi bersertifikat untuk reset metabolisme alami.
+        </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-md text-label-md text-primary font-bold">Mulai Rp 280.000 / paket</span>
+<button class="w-9 h-9 rounded-full bg-surface-pure flex items-center justify-center text-primary-container shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-space-xs relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between">
+<div class="w-11 h-11 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-botanical-muted text-secondary">Rutin Harian</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Langganan Harian Kantor &amp; Rumah</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Pengantaran botol dingin segar setiap pagi langsung ke meja kerja atau rumah Anda. Bebas jeda kapan saja.
+        </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-md text-label-md text-primary font-bold">Mulai Rp 38.000 / botol</span>
+<button class="w-9 h-9 rounded-full bg-surface-pure flex items-center justify-center text-primary-container shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-space-xs relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between">
+<div class="w-11 h-11 rounded-xl bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">celebration</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">B2B &amp; Event</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Custom Health Catering &amp; Event</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Sajian jus sehat berkelas untuk rapat korporat, pesta pernikahan, dan sesi yoga komunitas dengan label nama personal.
+        </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-md text-label-md text-primary font-bold">Kustomisasi Menu</span>
+<button class="w-9 h-9 rounded-full bg-surface-pure flex items-center justify-center text-primary-container shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-space-xs relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between">
+<div class="w-11 h-11 rounded-xl bg-amber-subtle text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">shield_with_heart</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container">Daya Tahan</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Paket Imun &amp; Vitalitas Booster</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Kombinasi padat jahe merah, kunyit, lemon, dan apel hijau untuk benteng daya tahan tubuh menghadapi cuaca ekstrem.
+        </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-md text-label-md text-primary font-bold">Mulai Rp 145.000 / paket</span>
+<button class="w-9 h-9 rounded-full bg-surface-pure flex items-center justify-center text-primary-container shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: KABAR SEHAT (BLOG / TIPS) -->
+<section class="w-full bg-surface-cream px-margin py-space-xl flex flex-col gap-space-lg">
+<!-- Header Block -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">Artikel &amp; Tips</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+        Inspirasi Hidup Sehat &amp; Edukasi Nutrisi
+      </h2>
+</div>
+<!-- Articles Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Article 1 -->
+<article class="p-space-md rounded-2xl bg-surface-pure shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-botanical-muted text-secondary font-bold">Tips Detox</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24 Okt 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+          5 Tanda Tubuhmu Membutuhkan Detox Alami Segera
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          Kenali sinyal kelelahan kronis dan metabolisme melambat serta cara mudah memulihkannya dengan asupan cairan berenzim.
+        </p>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary-container pt-space-xs font-bold active:opacity-80" href="#">
+<span class="">Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</article>
+<!-- Article 2 -->
+<article class="p-space-md rounded-2xl bg-surface-pure shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-amber-subtle text-primary font-bold">Nutrisi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18 Okt 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+          Mengapa Slow Cold-Press Lebih Unggul dari Blender Biasa?
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          Penjelasan ilmiah di balik oksidasi panas dan pentingnya mempertahankan serat larut dalam sari buah alami.
+        </p>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary-container pt-space-xs font-bold active:opacity-80" href="#">
+<span class="">Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</article>
+<!-- Article 3 -->
+<article class="p-space-md rounded-2xl bg-surface-pure shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold">Gaya Hidup</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10 Okt 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+          Rahasia Menjaga Pola Makan Seimbang di Tengah Jadwal Sibuk
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+          Panduan praktis meal prep dan integrasi jus segar sebagai pengganti camilan manis sehari-hari.
+        </p>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary-container pt-space-xs font-bold active:opacity-80" href="#">
+<span class="">Baca Selengkapnya</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</article>
+</div>
+<!-- All Articles CTA -->
+<a class="w-full py-3.5 rounded-full bg-botanical-muted text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-95 transition-transform text-center" href="#">
+<span class="">Lihat Semua Artikel</span>
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</a>
+</section>
+<!-- SECTION 5: KONTAK & LOKASI -->
+<section class="w-full px-margin py-space-xl flex flex-col gap-space-lg" id="kontak">
+<!-- Header Block -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">Kontak &amp; Lokasi</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+        Konsultasi Menu atau Kunjungi Gerai Kami
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Punya pertanyaan seputar program detox atau kebutuhan katering sehat? Tim kami siap membantu Anda.
+      </p>
+</div>
+<!-- Contact Info Cards -->
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-botanical-muted text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Alamat Gerai Utama</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Jl. Senopati No. 48, Kebayoran Baru, Jakarta Selatan 12190</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-botanical-muted text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">WhatsApp / Telepon</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">+62 812-3456-7890</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-botanical-muted text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Email Resmi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">halo@djuice.co.id</span>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-botanical-muted text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Jam Operasional</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Setiap Hari, 07.00 - 21.00 WIB</span>
+</div>
+</div>
+</div>
+<!-- Map View -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-52 bg-cover bg-center rounded-2xl flex items-end p-3" data-location="Jl. Senopati No. 48, Kebayoran Baru, Jakarta Selatan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9_v7jkkQY7t16XtYWVK3OkEUcIhfc9dwabcE4CNPb0HAVKqd8yQJWYPKInMzCAaCaXBF-D8pk33C3z2Dzme1TKTYM_vW6wFvj87iVI-Pc_amQW8hKj6lJb2IKc_IGppS4XbBoR3ZFTXRjPRnowZ3OVKzIAVsNcs7avn0m0GGEtbADUs3f_975ssSDYrKKzRKlDl4pwTv7Pgk5NsspMZi5G-IGybeQeFMmpmjHcsU')">
+<div class="w-full p-3 rounded-xl bg-surface-cream/95 backdrop-blur-md flex items-center justify-between shadow-md">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">pin_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">D'juice Studio Senopati</span>
+</div>
+<a class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shrink-0" href="https://maps.google.com" target="_blank">
+            Rute
+          </a>
+</div>
+</div>
+</div>
+<!-- Simple Contact Form -->
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Kirim Pesan Cepat</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Tuliskan kebutuhan Anda di bawah ini dan konsultan nutrisi kami akan segera menghubungi.
+      </p>
+<form class="flex flex-col gap-space-sm mt-1" id="contactForm" onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah kami terima.'); this.reset();">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Nama Lengkap</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-pure font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Contoh: Rian Anggoro" required="" type="text">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Email atau No. WhatsApp</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-pure font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="0812xxxx atau email@domain.com" required="" type="text">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Pilihan Topik</label>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-pure font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container">
+<option value="langganan">Langganan Rutin (Kantor / Rumah)</option>
+<option value="detox">Konsultasi Paket Detox Cleanse</option>
+<option value="event">Pemesanan Event &amp; Catering</option>
+<option value="umum">Pertanyaan Umum Lainnya</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface">Pesan Anda</label>
+<textarea class="w-full px-4 py-3 rounded-xl bg-surface-pure font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary-container resize-none" placeholder="Ceritakan target kesehatan atau rincian pesanan Anda..." required="" rows="3"></textarea>
+</div>
+<button class="w-full mt-2 min-h-[48px] py-3 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95" type="submit">
+<span class="">Kirim Pesan</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+</section>
+</div><footer class="w-full bg-surface-container-low px-margin py-space-xl flex flex-col items-center text-center gap-space-md mt-auto shadow-[0_-2px_12px_rgba(0,0,0,0.02)]"><div class="flex items-center gap-space-xs"><img alt="D'juice Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm90R1OefMYNE7UHtOJZoYod5r0aXRIidb2ZEi73jmsI2t06UOXnFKuAf9ivVKpNlyxDVjvKFYo5cnHC5BpriwzG9KEu2z0uW0ZEgDFAU5bL7KWAAeoHPknZDsoJ8kTroq4UYYTcMb97T2aR4WEb85Ytss9TeER4xIzLq6JOjU-lER7Ax-XtBoxc3vXy52Bmcs5zH3qmONsiOehu06OMEVFZf8Sm38k-N-TnBZS5A"><span class="font-headline-sm text-headline-sm text-primary">D'juice</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">Segar Murni Alami. Diproses dingin setiap hari dari buah &amp; sayur perkebunan lokal nusantara.</p><div class="flex items-center gap-space-md"><a aria-label="Instagram" class="w-11 h-11 rounded-full bg-botanical-muted text-secondary flex items-center justify-center hover:bg-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="WhatsApp" class="w-11 h-11 rounded-full bg-botanical-muted text-secondary flex items-center justify-center hover:bg-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><a aria-label="Email" class="w-11 h-11 rounded-full bg-botanical-muted text-secondary flex items-center justify-center hover:bg-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a></div><div class="flex flex-col gap-0.5 text-center"><span class="font-label-md text-label-md text-on-surface">halo@djuice.id • +62 812 3456 7890</span><span class="font-label-sm text-label-sm text-on-surface-variant">Jakarta Selatan, Indonesia</span></div><span class="font-label-sm text-label-sm text-on-surface-variant opacity-80 pt-space-xs">© 2025 D'juice Indonesia. Seluruh hak cipta.</span></footer></main><!-- Sticky Bottom Order Banner -->
+<aside id="order-floating-bar" class="fixed bottom-20 left-0 right-0 z-40 px-margin pointer-events-none transition-all duration-300">
+<div class="pointer-events-auto bg-inverse-surface text-inverse-on-surface p-3 px-4 rounded-2xl shadow-xl flex items-center justify-between gap-3 border border-surface-container/20">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</div>
+<div class="flex flex-col truncate">
+<span id="order-summary-title" class="font-label-sm text-label-sm text-surface-container-high truncate">Pesan Sekarang (2 Botol)</span>
+<span id="order-summary-price" class="font-label-lg text-label-lg font-bold text-inverse-on-surface">Rp 78.000</span>
+</div>
+</div>
+<button onclick="openOrderModal()" class="min-h-[44px] px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 flex items-center gap-1.5 shadow-md active:scale-95 transition-transform" type="button">
+<span class="">Beli Cepat</span>
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</button>
+</div>
+</aside>
+
+<!-- Quick Order Drawer / Modal -->
+<div id="quickOrderModal" class="fixed inset-0 z-50 bg-on-surface/50 backdrop-blur-sm hidden flex-col justify-end transition-opacity">
+<div class="w-full bg-surface-cream rounded-t-3xl p-space-md pb-safe flex flex-col gap-space-md max-h-[90vh] overflow-y-auto shadow-2xl">
+<!-- Drawer Header -->
+<div class="flex items-center justify-between border-b border-surface-container pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">local_mall</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pesanan Cepat WhatsApp</h3>
+</div>
+<button onclick="closeOrderModal()" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+
+<!-- Items Selected -->
+<div class="flex flex-col gap-space-xs bg-surface-pure p-space-md rounded-2xl shadow-sm border border-surface-container/60">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Rincian Keranjang</span>
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">1x Green Revive (350ml)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Detox &amp; Alkalizing</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">Rp 38.000</span>
+</div>
+<div class="flex items-center justify-between py-1 border-t border-surface-container">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">1x Golden Glow (350ml)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Immunity &amp; Glow</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">Rp 40.000</span>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<span class="font-label-md text-label-md text-on-surface font-bold">Subtotal (2 Botol)</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 78.000</span>
+</div>
+</div>
+
+<!-- Delivery Option Form -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-bold">Pilihan Pengiriman</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<label class="p-3 rounded-xl bg-surface-pure border border-primary-container flex flex-col gap-1 cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Instan / Sameday</span>
+<input type="radio" name="delivery" value="instant" checked="" class="accent-primary">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kurir pendingin tiba hari ini</span>
+</label>
+<label class="p-3 rounded-xl bg-surface-pure border border-surface-container flex flex-col gap-1 cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Ambil di Gerai</span>
+<input type="radio" name="delivery" value="pickup" class="accent-primary">
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Studio Senopati</span>
+</label>
+</div>
+</div>
+
+<!-- Order Notes / Recipient -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-bold">Alamat Pengantaran / Catatan</label>
+<input id="order-address-input" class="w-full px-4 py-3 rounded-xl bg-surface-pure font-body-sm text-body-sm text-on-surface border border-surface-container placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Tuliskan alamat atau request dingin ekstra..." type="text">
+</div>
+
+<!-- Checkout Action -->
+<div class="flex flex-col gap-space-xs pt-1">
+<a href="https://wa.me/6281234567890?text=Halo%20D'juice,%20saya%20ingin%20memesan%202%20Botol%20(Green%20Revive%20+%20Golden%20Glow)%20Total%20Rp%2078.000" target="_blank" class="min-h-[48px] py-3 px-6 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md transition-transform active:scale-95 text-center">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">Lanjut Pesan via WhatsApp (Rp 78.000)</span>
+</a>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant">
+Garansi 100% dingin &amp; segar langsung dari cold-storage.
+</p>
+</div>
+</div>
+</div>
+
+<script>
+function openOrderModal() {
+  const modal = document.getElementById('quickOrderModal');
+  if (modal) {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+}
+function closeOrderModal() {
+  const modal = document.getElementById('quickOrderModal');
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+}
+function addBottleToOrder(name, price) {
+  openOrderModal();
+}
+</script><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_10px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] transition-all text-primary font-bold" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">eco</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="tentang-kami" href="#"><span class="material-symbols-outlined text-[22px]">nutrition</span><span class="font-label-sm text-label-sm">Tentang</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="layanan" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Layanan</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="kabar-sehat" href="#"><span class="material-symbols-outlined text-[22px]">article</span><span class="font-label-sm text-label-sm">Kabar</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="kontak" href="#"><span class="material-symbols-outlined text-[22px]">support_agent</span><span class="font-label-sm text-label-sm">Kontak</span></a></div></nav>
+
+</body></html>

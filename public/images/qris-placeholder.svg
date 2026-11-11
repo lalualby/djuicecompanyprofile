@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" width="360" height="440">
+  <rect width="360" height="440" rx="24" fill="#ffffff" stroke="#e5f1e7" stroke-width="3"/>
+  <rect x="0" y="0" width="360" height="72" rx="24" fill="#FCF9EA"/>
+  <rect x="0" y="48" width="360" height="24" fill="#FCF9EA"/>
+  <text x="180" y="34" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="800" fill="#89511a">QRIS PEMBAYARAN RESMI</text>
+  <text x="180" y="56" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#54643c">D'Juice Indonesia (Placeholder)</text>
+  
+  <!-- QR Code Frame -->
+  <rect x="55" y="96" width="250" height="250" rx="16" fill="#ffffff" stroke="#141e18" stroke-width="2"/>
+  
+  <!-- Top-Left Finder Pattern -->
+  <rect x="75" y="116" width="52" height="52" rx="6" fill="none" stroke="#141e18" stroke-width="8"/>
+  <rect x="91" y="132" width="20" height="20" rx="2" fill="#141e18"/>
+  
+  <!-- Top-Right Finder Pattern -->
+  <rect x="233" y="116" width="52" height="52" rx="6" fill="none" stroke="#141e18" stroke-width="8"/>
+  <rect x="249" y="132" width="20" height="20" rx="2" fill="#141e18"/>
+  
+  <!-- Bottom-Left Finder Pattern -->
+  <rect x="75" y="274" width="52" height="52" rx="6" fill="none" stroke="#141e18" stroke-width="8"/>
+  <rect x="91" y="290" width="20" height="20" rx="2" fill="#141e18"/>
+  
+  <!-- Decorative QR Modules -->
+  <rect x="145" y="116" width="14" height="14" fill="#141e18"/>
+  <rect x="173" y="116" width="28" height="14" fill="#141e18"/>
+  <rect x="145" y="144" width="28" height="14" fill="#141e18"/>
+  <rect x="187" y="144" width="14" height="14" fill="#141e18"/>
+  <rect x="201" y="116" width="14" height="28" fill="#141e18"/>
+  
+  <rect x="75" y="186" width="14" height="28" fill="#141e18"/>
+  <rect x="103" y="186" width="28" height="14" fill="#141e18"/>
+  <rect x="103" y="214" width="14" height="28" fill="#141e18"/>
+  <rect x="75" y="228" width="14" height="28" fill="#141e18"/>
+  
+  <rect x="145" y="186" width="70" height="70" rx="12" fill="#FCF9EA" stroke="#db9558" stroke-width="3"/>
+  <text x="180" y="226" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="800" fill="#89511a">QRIS</text>
+  
+  <rect x="233" y="186" width="14" height="28" fill="#141e18"/>
+  <rect x="261" y="186" width="24" height="14" fill="#141e18"/>
+  <rect x="233" y="228" width="28" height="14" fill="#141e18"/>
+  <rect x="271" y="214" width="14" height="42" fill="#141e18"/>
+  
+  <rect x="145" y="274" width="28" height="14" fill="#141e18"/>
+  <rect x="187" y="274" width="14" height="28" fill="#141e18"/>
+  <rect x="215" y="274" width="28" height="14" fill="#141e18"/>
+  <rect x="257" y="274" width="28" height="28" fill="#141e18"/>
+  <rect x="145" y="302" width="14" height="24" fill="#141e18"/>
+  <rect x="173" y="312" width="42" height="14" fill="#141e18"/>
+  <rect x="229" y="302" width="14" height="24" fill="#141e18"/>
+  <rect x="257" y="312" width="28" height="14" fill="#141e18"/>
+  
+  <text x="180" y="376" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#141e18">NMID: ID1020304050607 (Contoh)</text>
+  <text x="180" y="398" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#52443a">Ganti file public/images/qris-placeholder.svg</text>
+  <text x="180" y="414" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#52443a">dengan gambar QRIS usaha asli Anda nanti.</text>
+</svg>
+
