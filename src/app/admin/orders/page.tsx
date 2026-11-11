@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { formatWhatsAppDisplay, normalizeWhatsApp } from "@/lib/whatsapp";
 
 interface AdminOrderItem {
   id: string;
@@ -13,21 +14,11 @@ interface AdminOrderItem {
   total_price: number;
   recipient_name: string;
   address: string;
-  whatsapp: string;
+  whatsapp: string | number;
   notes?: string;
   status: "menunggu_konfirmasi" | "dikonfirmasi" | "ditolak";
   rejection_reason?: string;
   created_at: string;
-}
-
-function normalizeWhatsApp(raw: string): string {
-  let digits = raw.replace(/\D/g, "");
-  if (digits.startsWith("0")) {
-    digits = "62" + digits.slice(1);
-  } else if (!digits.startsWith("62")) {
-    digits = "62" + digits;
-  }
-  return digits;
 }
 
 export default function AdminOrdersPage() {
@@ -126,11 +117,15 @@ export default function AdminOrdersPage() {
 
   const filteredOrders = orders.filter((o) => {
     const q = search.toLowerCase();
+    const waDisplay = formatWhatsAppDisplay(o.whatsapp).toLowerCase();
+    const waNormalized = normalizeWhatsApp(o.whatsapp).toLowerCase();
     const matchSearch =
-      o.id.toLowerCase().includes(q) ||
-      o.recipient_name.toLowerCase().includes(q) ||
-      o.product_name.toLowerCase().includes(q) ||
-      o.whatsapp.toLowerCase().includes(q);
+      String(o.id ?? "").toLowerCase().includes(q) ||
+      String(o.recipient_name ?? "").toLowerCase().includes(q) ||
+      String(o.product_name ?? "").toLowerCase().includes(q) ||
+      String(o.whatsapp ?? "").toLowerCase().includes(q) ||
+      waDisplay.includes(q) ||
+      waNormalized.includes(q);
     const matchStatus = filterStatus === "all" ? true : o.status === filterStatus;
     return matchSearch && matchStatus;
   });
@@ -265,7 +260,7 @@ export default function AdminOrdersPage() {
                     </p>
                     <p>
                       <strong className="text-on-surface">WhatsApp:</strong>{" "}
-                      {ord.whatsapp}
+                      {formatWhatsAppDisplay(ord.whatsapp)}
                     </p>
                     <p>
                       <strong className="text-on-surface">Alamat:</strong>{" "}
@@ -276,17 +271,19 @@ export default function AdminOrdersPage() {
 
                 {/* Action Buttons */}
                 <div className="pt-3 border-t border-surface-container flex flex-wrap items-center justify-end gap-2.5">
-                  <a
-                    href={waLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-botanical-muted text-secondary font-bold text-xs hover:bg-secondary-container transition-colors"
-                  >
-                    <span className="material-symbols-outlined text-[16px]">
-                      chat
-                    </span>
-                    <span>Hubungi via WhatsApp</span>
-                  </a>
+                  {waNumber ? (
+                    <a
+                      href={waLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-botanical-muted text-secondary font-bold text-xs hover:bg-secondary-container transition-colors"
+                    >
+                      <span className="material-symbols-outlined text-[16px]">
+                        chat
+                      </span>
+                      <span>Hubungi via WhatsApp</span>
+                    </a>
+                  ) : null}
 
                   {ord.status === "menunggu_konfirmasi" && (
                     <>

@@ -13,6 +13,9 @@ Dokumen ini mencatat rencana pengembangan lanjutan, temuan kendala/bug, serta ri
 - *(Belum ada bug fungsional lain yang dilaporkan pada hasil build saat ini.)*
 
 ## Riwayat Perubahan
+- **2026-11-11 — Perbaikan Bug WhatsApp Pesanan (Google Sheets Numeric Cell):**
+  - Memperbaiki error `TypeError: raw.replace is not a function` di `/admin/orders` yang terjadi ketika Google Spreadsheet menyimpan nomor WhatsApp sebagai angka (`number`) dan menghapus angka `0` di depan.
+  - Menambahkan `src/lib/whatsapp.ts` (`normalizeWhatsApp`, `formatWhatsAppDisplay`, `normalizeOrderRecord`) dan menerapkannya di `/api/orders`, `/api/admin/orders`, `/admin/orders`, `/orders`, dan `/orders/[id]`, serta format kolom teks `@` untuk `whatsapp` di `setup.gs`.
 - **2026-11-11 — Step 4 (Persiapan Deploy, QA & QRIS Asli):**
   - Mengganti QRIS placeholder dengan gambar QRIS asli GoPay Merchant (`public/images/qris.jpg`) di `src/config/site.ts` dan menambahkan tombol simpan gambar QRIS di `/orders/[id]`.
   - Menambahkan halaman 404 khusus D'Juice (`src/app/not-found.tsx`).

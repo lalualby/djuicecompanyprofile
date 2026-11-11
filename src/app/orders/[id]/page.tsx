@@ -7,6 +7,7 @@ import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { siteConfig } from "@/config/site";
+import { formatWhatsAppDisplay } from "@/lib/whatsapp";
 
 interface OrderDetail {
   id: string;
@@ -184,7 +185,7 @@ export default function OrderPaymentPage() {
                   </p>
                   <p>
                     <strong className="text-on-surface">WhatsApp:</strong>{" "}
-                    {order.whatsapp}
+                    {formatWhatsAppDisplay(order.whatsapp)}
                   </p>
                   <p>
                     <strong className="text-on-surface">Alamat:</strong>{" "}

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { formatWhatsAppDisplay } from "@/lib/whatsapp";
 
 interface OrderTicket {
   id: string;
@@ -160,7 +161,7 @@ export default function MyOrdersPage() {
                       {ord.product_name} × {ord.quantity} botol
                     </p>
                     <p className="text-on-surface-variant">
-                      Penerima: {ord.recipient_name} ({ord.whatsapp})
+                      Penerima: {ord.recipient_name} ({formatWhatsAppDisplay(ord.whatsapp)})
                     </p>
                     <p className="text-on-surface-variant line-clamp-1">
                       Alamat: {ord.address}

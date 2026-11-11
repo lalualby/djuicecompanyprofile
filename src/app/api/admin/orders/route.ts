@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { getRecords, updateRecord } from "@/lib/db";
+import { normalizeOrderRecord } from "@/lib/whatsapp";
 
 const ALLOWED_STATUSES = ["menunggu_konfirmasi", "dikonfirmasi", "ditolak"] as const;
 
@@ -18,11 +19,12 @@ export async function GET() {
 
     const enriched = orders
       .map((o: any) => {
-        const buyer = users.find((u: any) => String(u.id) === String(o.user_id));
+        const normalized = normalizeOrderRecord(o);
+        const buyer = users.find((u: any) => String(u.id) === normalized.user_id);
         return {
-          ...o,
-          buyer_email: buyer ? buyer.email : "",
-          buyer_account_name: buyer ? buyer.name : "",
+          ...normalized,
+          buyer_email: buyer ? String(buyer.email ?? "") : "",
+          buyer_account_name: buyer ? String(buyer.name ?? "") : "",
         };
       })
       .sort(

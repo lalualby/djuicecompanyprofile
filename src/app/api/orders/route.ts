@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { getRecords, insertRecord } from "@/lib/db";
 import { siteConfig } from "@/config/site";
+import { normalizeOrderRecord, normalizeWhatsApp } from "@/lib/whatsapp";
 
 export async function GET(req: Request) {
   try {
@@ -20,6 +21,7 @@ export async function GET(req: Request) {
     // Pastikan pengguna hanya bisa melihat pesanannya sendiri
     const userOrders = allOrders
       .filter((o: any) => String(o.user_id) === String(user.id))
+      .map((o: any) => normalizeOrderRecord(o))
       .sort(
         (a: any, b: any) =>
           new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
@@ -120,6 +122,8 @@ export async function POST(req: Request) {
       .substring(2, 5)
       .toUpperCase()}`;
 
+    const normalizedWhatsapp = normalizeWhatsApp(whatsappRaw);
+
     const newOrder = await insertRecord("Orders", {
       id: ticketId,
       user_id: user.id,
@@ -130,7 +134,7 @@ export async function POST(req: Request) {
       total_price: totalPrice,
       recipient_name: recipientName,
       address,
-      whatsapp: whatsappRaw,
+      whatsapp: normalizedWhatsapp,
       notes,
       status: "menunggu_konfirmasi",
       rejection_reason: "",
